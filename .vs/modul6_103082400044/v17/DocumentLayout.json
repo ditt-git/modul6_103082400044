@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\Mac\\Home\\Downloads\\modul6_103082400044\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C8CC1EB-1DB0-4F22-BD3C-115F0FEFD825}|modul6_103082400044\\modul6_103082400044.csproj|\\\\mac\\home\\downloads\\modul6_103082400044\\modul6_103082400044\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Downloads\\modul6_103082400044\\modul6_103082400044\\Program.cs",
+              "RelativeDocumentMoniker": "modul6_103082400044\\Program.cs",
+              "ToolTip": "\\\\Mac\\Home\\Downloads\\modul6_103082400044\\modul6_103082400044\\Program.cs",
+              "RelativeToolTip": "modul6_103082400044\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T09:25:55.375Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
