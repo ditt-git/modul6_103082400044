@@ -16,19 +16,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SayaTubeVideo.cs",
               "DocumentMoniker": "\\\\Mac\\Home\\Downloads\\modul6_103082400044\\modul6_103082400044\\SayaTubeVideo.cs",
               "RelativeDocumentMoniker": "modul6_103082400044\\SayaTubeVideo.cs",
-              "ToolTip": "\\\\Mac\\Home\\Downloads\\modul6_103082400044\\modul6_103082400044\\SayaTubeVideo.cs",
-              "RelativeToolTip": "modul6_103082400044\\SayaTubeVideo.cs",
-              "ViewState": "AgIAADsAAAAAbDMzMzPDv0AAAAAAAAAAAAAAAA==",
+              "ToolTip": "\\\\Mac\\Home\\Downloads\\modul6_103082400044\\modul6_103082400044\\SayaTubeVideo.cs*",
+              "RelativeToolTip": "modul6_103082400044\\SayaTubeVideo.cs*",
+              "ViewState": "AgIAADoAAACAnJmZmRkwwEMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T09:35:51.892Z",
+              "WhenOpened": "2026-04-06T01:38:38.295Z",
               "EditorCaption": ""
             },
             {
@@ -41,8 +53,7 @@
               "RelativeToolTip": "modul6_103082400044\\.gitignore",
               "ViewState": "AgIAAIkBAABAMzMzM/MmwJ8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-04-05T09:27:45.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-06T01:38:38.386Z"
             }
           ]
         }

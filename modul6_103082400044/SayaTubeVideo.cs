@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace tpmodul6_103082400044
 {
@@ -11,7 +12,7 @@ namespace tpmodul6_103082400044
 
         public SayaTubeVideo(string title)
         {
-            if (string.IsNullOrWhiteSpace(title) || title.Length > 100)
+            if (string.IsNullOrWhiteSpace(title) || title.Length > 200)
             {
                 throw new ArgumentException("Judul video tidak valid.");
             }
@@ -24,20 +25,16 @@ namespace tpmodul6_103082400044
 
         public void IncreasePlayCount(int count)
         {
-            if (count > 10000000)
+            Debug.Assert(count <= 25000000 && count >= 0, "Play Count Maksimal 25.000.000 per panggilan atau tidak boleh negatif");
+            if (count > 25000000 || count < 0) throw new ArgumentOutOfRangeException("Input penambahan tidak valid.");
+
+            checked
             {
-                throw new ArgumentOutOfRangeException("Penambahan maksimal 10.000.000 per panggilan.");
-            }
-            try
-            {
-                checked { this.playCount += count; }
-            }
-            catch (OverflowException)
-            {
-                Console.WriteLine("Error: PlayCount overflow!");
+                playCount += count;
             }
         }
 
+        //Method Get
         public string GetTitle()
         {
             return title;
@@ -73,6 +70,9 @@ namespace tpmodul6_103082400044
 
         public void AddVideo(SayaTubeVideo video)
         {
+            Debug.Assert(video != null && video.GetPlayCount() < int.MaxValue, "Video tidak boleh null dan play count kurang dari int maksimum");
+            if (video == null || video.GetPlayCount() >= int.MaxValue) throw new ArgumentException("Video tidak valid untuk ditambahkan.");
+
             uploadedVideos.Add(video);
         }
 
@@ -87,7 +87,7 @@ namespace tpmodul6_103082400044
         {
             Console.WriteLine($"User: {username}");
             Console.WriteLine();
-            for (int i = 0; i < uploadedVideos.Count; i++)
+            for (int i = 0; i < 8; i++)
             {
                 Console.WriteLine($"Video {i + 1} : {uploadedVideos[i].GetTitle()}");
             }
@@ -106,7 +106,7 @@ namespace tpmodul6_103082400044
             foreach (var judul in daftarFilm)
             {
                 SayaTubeVideo v = new SayaTubeVideo($"Review Film {judul} oleh Pradipta");
-                v.IncreasePlayCount(1000); // set play count
+                v.IncreasePlayCount(1000);
                 user.AddVideo(v);
             }
 
